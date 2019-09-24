@@ -277,7 +277,7 @@ var index = {
         } else {
           query[keyName] = genKey();
         }
-        next({ name: to.name, params: to.params, query: query, replace: replaceFlag || !from.query[keyName] });
+        next({ path: to.path, params: to.params, query: query, replace: replaceFlag || !from.query[keyName] });
       } else {
         next();
       }
